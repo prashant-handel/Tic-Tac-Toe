@@ -1,134 +1,143 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-    font-size: 5vw;
+h1 {
+  font-size: 5vw;
 }
 
-nav{
-    background-color: rgb(113, 10, 113);
-    color: white;
-    height: 50px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+nav {
+  background-color: rgb(113, 10, 113);
+  color: white;
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
-nav ul{
-    list-style-type: none;
-}
-
-.gameContainer{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+nav ul {
+  list-style-type: none;
 }
 
-.container{
-    display: grid;
-    grid-template-rows: repeat(3,10vw);
-    grid-template-columns: repeat(3,10vw);
-    font-family:sans-serif;
-    background-color: rgba(34, 113, 104, 0.799);
-    position: relative;
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.box{
-    border: 0.2vw solid black;
-    font-size: 10vw;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: sans-serif;
+  background-color: rgba(34, 113, 104, 0.799);
+  position: relative;
 }
 
-.box:hover{
-    background-color: rgba(127, 85, 167, 0.436);
+.box {
+  border: 0.2vw solid black;
+  font-size: 10vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gameInfo{
-    padding: 0 40px;
+.box:hover {
+  background-color: rgba(127, 85, 167, 0.436);
 }
 
-.imgbox img{
-    width: 0;
-    transition: width is ease-in-out;
+.gameInfo {
+  padding: 0 40px;
 }
 
-.info{
-    padding: 10px;
-    display: block;
-    margin-top: 20px;
-    font-size: 3vw;
-    font-weight: bold;
+.imgbox img {
+  width: 0;
+  transition: width is ease-in-out;
 }
 
-#reset{
-    cursor: pointer;
+.info {
+  padding: 10px;
+  display: block;
+  margin-top: 20px;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
-.br-0{
-    border-right: 0;
-}
-.bl-0{
-    border-left: 0;
-}
-.bt-0{
-    border-top: 0;
-}
-.bb-0{
-    border-bottom: 0;
+#reset {
+  cursor: pointer;
 }
 
-#reset{
-    margin: 20px 25px;
-    padding: 10px 30px;
-    border: 2px solid black;
-    font-size: 30px;
-    width: 300px;
-    background-color: #ee77009e;
-    border-radius: 10px;
-    cursor: pointer;
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
 }
 
-#reset:hover{
-    background-color: #5a340ed2;
+#reset {
+  margin: 20px 25px;
+  padding: 10px 30px;
+  border: 2px solid black;
+  font-size: 30px;
+  width: 300px;
+  background-color: #ee77009e;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.music{
-    margin: 20px 10px;
-    padding: 10px 30px;
-    border: 2px solid black;
-    font-size: 30px;
-    width: 200px;
-    background-color: #5b65c4;
-    border-radius: 10px;
-    cursor: pointer;
+#reset:hover {
+  background-color: #5a340ed2;
 }
 
-.music:hover{
-    background-color: #1f2649ef;
+.music {
+  margin: 20px 10px;
+  padding: 10px 30px;
+  border: 2px solid black;
+  font-size: 30px;
+  width: 200px;
+  background-color: #5b65c4;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 900px){
-    .gameContainer{
-        flex-wrap: wrap;
-    }
-    .gameInfo{
-        margin-top: 33px;
-    }
-    h1{
-        font-size: 1.5rem;
-    }
+.music:hover {
+  background-color: #1f2649ef;
+}
+.line {
+  background-color: rgb(0, 255, 13);
+  width: 0vw;
+  height: 1.2rem;
+  position: absolute;
+  left: 2.5vw;
+  top: 4.2vw;
 }
 
-.line{
-    background-color: rgb(0, 255, 13);
-    width: 0vw;
-    height: 1.2rem;
-    position: absolute;
-    left: 2.5vw;
-    top: 4.2vw;
+@media screen and (max-width: 900px) {
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+  .gameInfo {
+    margin-top: 33px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .music {
+    font-size: 1em;
+    width: 150px;
+  }
+  #reset {
+    font-size: 1.5em;
+  }
+  .line {
+    height: 0.6rem;
+  }
 }
